@@ -20,12 +20,15 @@ class NetTopo( Topo ):
         s2 = self.addSwitch('s2')
 	s3 = self.addSwitch('s3')
 
+	# Definieren der Netzwerkverbindungen (Start, Ziel, Geschwindikeit in Mbit/s, Paketverlust in %)
         self.addLink(c1, s1, bw=10)
         self.addLink(c2, s1, bw=10)
-        self.addLink(s1, s2, bw=10, loss=5)
+	# Paketverlust auf der Hauptverbindung zwischen den Switches auf 50% setzen
+        self.addLink(s1, s2, bw=10, loss=50)
 	self.addLink(sv1, s2, bw=10)
 	self.addLink(sv1, s2, bw=10)
-		
+	
+	# Netzwerkverbindngen ohne Limitierung, für die SSH verbidungen zu den Hosts
 	self.addLink(s3, c1)
 	self.addLink(s3, c2)
 	self.addLink(s3, sv1)
