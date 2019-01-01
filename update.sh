@@ -6,7 +6,7 @@ wget -q --spider http://google.com
 
 if [ $? -eq 0 ]; then
     echo "Beginne Update"
-    wget --no-check-certificate --content-disposition https://github.com/Lemonn/Knetze_Labor_Aufagabe4/blob/master/Aufgabe4-1.py
+    wget -P ~/update --no-check-certificate --content-disposition https://github.com/Lemonn/Knetze_Labor_Aufagabe4/blob/master/Aufgabe4-1.py
     if [ $? -eq 0 ]; then
     
     else
@@ -15,3 +15,7 @@ if [ $? -eq 0 ]; then
 else
     echo "Keine Internetverbindung, die Mininet Konfigurationen können manuell von https://github.com/Lemonn/Knetze_Labor_Aufagabe4 Heruntergeldaen werden!"
 fi
+
+
+
+# wget -P ~/update --no-check-certificate --content-disposition https://github.com/Lemonn/Knetze_Labor_Aufagabe4/blob/master/update.sh && chmod +x ~/update/update.sh && ~/update/update.sh
