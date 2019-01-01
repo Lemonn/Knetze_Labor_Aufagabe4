@@ -24,7 +24,7 @@ class NetTopo( Topo ):
         self.addLink(c1, s1, bw=10)
         self.addLink(c2, s1, bw=10)
 	# Paketverlust auf der Hauptverbindung zwischen den Switches auf 50% setzen
-        self.addLink(s1, s2, bw=10, loss=50)
+        self.addLink(s1, s2, bw=10, loss=30)
 	self.addLink(sv1, s2, bw=10)
 	self.addLink(sv1, s2, bw=10)
 	
