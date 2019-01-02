@@ -21,7 +21,7 @@ if [ $? -eq 0 ]; then
 else
     echo "Keine Internetverbindung! \n"
     echo "die Mininet Konfigurationen können manuell von https://github.com/Lemonn/Knetze_Labor_Aufagabe4 Heruntergeldaen werden! \n"
-    cho "Dann die drei ensprechenden Dateien in ~/mininet/custom ersetzen"
+    echo "Dann die drei ensprechenden Dateien in ~/mininet/custom ersetzen"
     exit 1
 fi
 
