@@ -22,7 +22,7 @@ else
     echo "Keine Internetverbindung! \n"
     echo "die Mininet Konfigurationen können manuell von https://github.com/Lemonn/Knetze_Labor_Aufagabe4 Heruntergeldaen werden! \n"
     cho "Dann die drei ensprechenden Dateien in ~/mininet/custom ersetzen"
-    exit
+    exit 1
 fi
 
 # Befehl zum Updaten in der VM
