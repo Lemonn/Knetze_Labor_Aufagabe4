@@ -4,9 +4,9 @@
 # Notfalls die Dateien von Hand auf dem Host herunterladen und in die VM kopieren.
 
 # Neue Konfuguration laden
-wget -P ~/update --no-check-certificate --content-disposition https://github.com/Lemonn/Knetze_Labor_Aufagabe4/blob/master/Aufgabe4-1.py
-wget -P ~/update --no-check-certificate --content-disposition https://github.com/Lemonn/Knetze_Labor_Aufagabe4/blob/master/Aufgabe4-2.py
-wget -P ~/update --no-check-certificate --content-disposition https://github.com/Lemonn/Knetze_Labor_Aufagabe4/blob/master/Aufgabe4-3.py
+wget -P ~/update --no-check-certificate --content-disposition https://raw.githubusercontent.com/Lemonn/Knetze_Labor_Aufagabe4/master/Aufgabe4-1.py
+wget -P ~/update --no-check-certificate --content-disposition https://raw.githubusercontent.com/Lemonn/Knetze_Labor_Aufagabe4/master/Aufgabe4-2.py
+wget -P ~/update --no-check-certificate --content-disposition https://raw.githubusercontent.com/Lemonn/Knetze_Labor_Aufagabe4/master/Aufgabe4-3.py
 
 # Alte Konfiguration Löschen
 cd ~/mininet/custom/
@@ -17,4 +17,4 @@ mv ~/update/Aufgabe4-3.py ~/mininet/custom/
 
 
 # Befehl zum Updaten
-# wget -P ~/update --no-check-certificate --content-disposition https://github.com/Lemonn/Knetze_Labor_Aufagabe4/blob/master/update.sh && chmod +x ~/update/update.sh && ~/update/update.sh
+# wget -P ~/update --no-check-certificate --content-disposition https://raw.githubusercontent.com/Lemonn/Knetze_Labor_Aufagabe4/master/update.sh && chmod +x ~/update/update.sh && ~/update/update.sh
