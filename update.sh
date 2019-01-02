@@ -17,4 +17,4 @@ mv ~/update/Aufgabe4-3.py ~/mininet/custom/
 
 
 # Befehl zum Updaten
-# wget -P ~/update --no-check-certificate --content-disposition https://raw.githubusercontent.com/Lemonn/Knetze_Labor_Aufagabe4/master/update.sh && chmod +x ~/update/update.sh && ~/update/update.sh
+# rm ~/update && wget -P ~/update --no-check-certificate --content-disposition https://raw.githubusercontent.com/Lemonn/Knetze_Labor_Aufagabe4/master/update.sh && chmod +x ~/update/update.sh && ~/update/update.sh
