@@ -20,11 +20,11 @@ class NetTopo( Topo ):
         s2 = self.addSwitch('s2')
 	s3 = self.addSwitch('s3')
 
-	# Definieren der Netzwerkverbindungen (Start, Ziel, Geschwindikeit in Mbit/s, Paketverlust in %)
+	# Definieren der Netzwerkverbindungen (Start, Ziel, Geschwindikeit in Mbits, Paketverlust in Prozent)
         self.addLink(c1, s1, bw=10)
         self.addLink(c2, s1, bw=10)
-	# Paketverlust auf der Hauptverbindung zwischen den Switches auf 30% setzen. Ein zu hoher Paketverlust verhinder den
-	# aufbau der UDP-Verbindung mit iperf3
+	# Paketverlust auf der Hauptverbindung zwischen den Switches auf 30% setzen. Ein zu hoher Paketverlust verhindert den
+	# aufbau der UDP Verbindung mit iperf3
         self.addLink(s1, s2, bw=10, loss=30)
 	self.addLink(sv1, s2, bw=10)
 	self.addLink(sv1, s2, bw=10)
