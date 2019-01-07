@@ -22,10 +22,11 @@ class NetTopo( Topo ):
 
         self.addLink(c1, s1, bw=10)
         self.addLink(c2, s1, bw=10)
-        self.addLink(s1, s2, bw=10, loss=50)
+        self.addLink(s1, s2, bw=10, loss=5)
 	self.addLink(sv1, s2, bw=10)
 	self.addLink(sv1, s2, bw=10)
-		
+	
+	# Netzwerkverbindngen ohne Limitierung, für die SSH verbidungen zu den Hosts
 	self.addLink(s3, c1)
 	self.addLink(s3, c2)
 	self.addLink(s3, sv1)
@@ -56,3 +57,6 @@ if __name__ == '__main__':
 
 	routing(net)
 	sshd(net)
+
+	CLI(net)
+net.stop()
