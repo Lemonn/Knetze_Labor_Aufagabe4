@@ -26,7 +26,6 @@ class NetTopo( Topo ):
 	self.addLink(sv1, s2, bw=10)
 	self.addLink(sv1, s2, bw=10)
 	
-	# Netzwerkverbindngen ohne Limitierung, für die SSH verbidungen zu den Hosts
 	self.addLink(s3, c1)
 	self.addLink(s3, c2)
 	self.addLink(s3, sv1)
